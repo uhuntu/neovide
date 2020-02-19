@@ -111,14 +111,13 @@ pub fn ui_loop() {
                 Event::KeyDown { keycode: Some(keycode), keymod: modifiers, .. } => {
                     if let Some((key_text, special)) = parse_keycode(keycode) {
                         let will_text_input =
-                            
                             !modifiers.contains(Mod::LCTRLMOD) &&
                             !modifiers.contains(Mod::RCTRLMOD) &&
                             !modifiers.contains(Mod::LALTMOD) &&
                             !modifiers.contains(Mod::RALTMOD) &&
                             !modifiers.contains(Mod::LGUIMOD) &&
                             !modifiers.contains(Mod::RGUIMOD);
-                        if will_text_input && !special {
+                        if modifiers.contains(Mod::MODEMOD) || (will_text_input && !special) {
                             break;
                         }
 
