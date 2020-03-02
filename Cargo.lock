@@ -17,9 +17,9 @@ dependencies = [
 
 [[package]]
 name = "aho-corasick"
-version = "0.7.8"
+version = "0.7.9"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "743ad5a418686aad3b87fd14c43badd828cf26e214a00f92a384291cf22e1811"
+checksum = "d5e63fd144e18ba274ae7095c0197a870a7b9468abc801dd62f190d80817d2ec"
 dependencies = [
  "memchr",
 ]
@@ -445,9 +445,9 @@ dependencies = [
 
 [[package]]
 name = "curl"
-version = "0.4.25"
+version = "0.4.26"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "06aa71e9208a54def20792d877bc663d6aae0732b9852e612c4a933177c31283"
+checksum = "ecb534fed9060d04bccaa8b8e1e2d3d5a0d7a9ec6d9c667691c80a3c6b7d19ef"
 dependencies = [
  "curl-sys",
  "libc",
@@ -460,9 +460,9 @@ dependencies = [
 
 [[package]]
 name = "curl-sys"
-version = "0.4.26"
+version = "0.4.27"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "0853fe2a575bb381b1f173610372c7722d9fa9bc4056512ed99fe6a644c388c6"
+checksum = "4e97059be9b77dbac729368208bb5430cf9baf4c050ae8782a28010136cd906d"
 dependencies = [
  "cc",
  "libc",
@@ -1515,9 +1515,9 @@ dependencies = [
 
 [[package]]
 name = "regex-syntax"
-version = "0.6.14"
+version = "0.6.15"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "b28dfe3fe9badec5dbf0a79a9cccad2cfc2ab5484bdb3e44cbd1ae8b3ba2be06"
+checksum = "7246cd0a0a6ec2239a5405b2b16e3f404fa0dcc6d28f5f5b877bf80e33e0f294"
 
 [[package]]
 name = "rmp"
@@ -1792,7 +1792,7 @@ dependencies = [
 [[package]]
 name = "skulpin"
 version = "0.5.2"
-source = "git+https://github.com/Kethku/skulpin?branch=sdl2#9c62459e55d46c824c16135f73a93b7f3c85a908"
+source = "git+https://github.com/Kethku/skulpin?branch=sdl2#825c5fa242aed3c46d376b446ce503875773cdd9"
 dependencies = [
  "ash",
  "cocoa",
@@ -1921,9 +1921,9 @@ dependencies = [
 
 [[package]]
 name = "tokio"
-version = "0.2.11"
+version = "0.2.13"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "8fdd17989496f49cdc57978c96f0c9fe5e4a58a8bddc6813c449a4624f6a030b"
+checksum = "0fa5e81d6bc4e67fe889d5783bd2a128ab2e0cfa487e0be16b6a8d177b101616"
 dependencies = [
  "bytes 0.5.4",
  "fnv",
@@ -1955,9 +1955,9 @@ dependencies = [
 
 [[package]]
 name = "tokio-macros"
-version = "0.2.4"
+version = "0.2.5"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "f4b1e7ed7d5d4c2af3d999904b0eebe76544897cdbfb2b9684bed2174ab20f7c"
+checksum = "f0c3acc6aa564495a0f2e1d59fab677cd7f81a19994cfc7f3ad0e64301560389"
 dependencies = [
  "proc-macro2 1.0.9",
  "quote 1.0.2",
