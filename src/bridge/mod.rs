@@ -41,8 +41,7 @@ fn platform_build_nvim_cmd(bin: &str) -> Option<Command> {
         return None;
     }
 
-    if env::args().any(|x| x == String::from("--wsl"))
-    {
+    if env::args().any(|x| x == "--wsl") {
         let mut cmd = Command::new("wsl");
         cmd.arg(bin);
         Some(cmd)
