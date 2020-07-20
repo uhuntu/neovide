@@ -1,0 +1,30 @@
+[package]
+name = "vide"
+version = "0.1.0"
+authors = ["keith <keith@the-simmons.net>"]
+edition = "2018"
+description = "Character grid UI framework"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+euclid = "0.20.7"
+font-kit = "0.6.0"
+skribo = { git = "https://github.com/linebender/skribo" }
+lru = "0.4.3"
+skulpin = { git = "https://github.com/aclysma/skulpin", branch = "master", features = ["skulpin_sdl2"] }
+rust-embed = { version = "5.2.0", features = ["debug-embed"] }
+image = "0.22.3"
+lazy_static = "1.4.0"
+unicode-segmentation = "1.6.0"
+log = "0.4.8"
+flexi_logger = { version = "0.14.6", default-features = false }
+parking_lot="0.10.0"
+cfg-if = "0.1.10"
+
+[target.'cfg(windows)'.dependencies]
+winapi = "0.3.8"
+
+[build-dependencies]
+winres = "0.1.11"
+sdl2-sys = { version = "0.33", default-features = false, features = ["bundled", "static-link"] }

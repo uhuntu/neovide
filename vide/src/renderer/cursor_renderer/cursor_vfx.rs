@@ -131,7 +131,7 @@ impl CursorVfx for PointHighlight {
         colors: &Colors,
         font_size: (f32, f32),
     ) {
-        if (self.t - 1.0).abs() < std::f32::EPSILON {
+        if self.t == 1.0 {
             return;
         }
 
@@ -257,7 +257,7 @@ impl CursorVfx for ParticleTrail {
 
                 let speed = match self.trail_mode {
                     TrailMode::Railgun => {
-                        let phase = t / std::f32::consts::PI
+                        let phase = t / 3.141592
                             * settings.vfx_particle_phase
                             * (travel_distance / font_size.0);
                         Point::new(phase.sin(), phase.cos()) * 2.0 * settings.vfx_particle_speed
@@ -366,8 +366,8 @@ struct RngState {
 impl RngState {
     fn new() -> RngState {
         RngState {
-            state: 0x853C_49E6_748F_EA9Bu64,
-            inc: (0xDA3E_39CB_94B9_5BDBu64 << 1) | 1,
+            state: 0x853C49E6748FEA9Bu64,
+            inc: (0xDA3E39CB94B95BDBu64 << 1) | 1,
         }
     }
     fn next(&mut self) -> u32 {

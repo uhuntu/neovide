@@ -1,0 +1,2 @@
+- Add back settings system
+- Add back file drag and drop
